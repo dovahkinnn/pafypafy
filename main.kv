@@ -1,0 +1,31 @@
+<MyGrid>:
+
+    name: name
+    
+
+    GridLayout:
+        cols:1
+        size: root.width - 200, root.height -225
+        pos: 100, 350
+
+        GridLayout:
+            cols:1
+
+            MDLabel:
+                text: "YOUTUBE Video Dowloader"
+                halign: "left"
+
+            MDTextFieldRect:
+                size_hint: 1, None
+                height: "30dp"
+                
+                id: name
+                halign: "left"
+                hint_text: 'Empty field'
+
+            MDRectangleFlatButton:
+                text: "indirmek icin tikla"
+                text_color: 0, 0, 1, 1
+                md_bg_color: 0, 1, 0, 1
+                halign: "left"
+                on_press: root.btn()
